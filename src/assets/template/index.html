@@ -6,224 +6,226 @@
     <title>BWC Helth Cheker</title>
   </head>
   <body>
-    <!-- Left Navi -->
-    <header>
-      <!-- logo -->
-      <div>
-        <h1></h1>
-      </div>
-
-      <nav>
-        <!-- Settings -->
+    <div id="containerWrapper">
+      <!-- Left Menu -->
+      <header>
+        <!-- logo -->
         <div>
+          <h1></h1>
+        </div>
+
+        <nav>
+          <!-- Settings -->
           <div>
-            <h2>Settings</h2>
+            <div>
+              <h2>Settings</h2>
+            </div>
+            <div>
+              <ul>
+                <li>Set Service</li>
+                <li>Set Notification</li>
+              </ul>
+            </div>
           </div>
+
+          <!-- Service List -->
+          <div>
+            <div>
+              <h2>Service List</h2>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <span>TOTAL SERVICE</span>
+                </li>
+                <li>
+                  <span>Service</span>
+                  <ul>
+                    <li>PINPAY</li>
+                    <li>Preorder</li>
+                    <li>Subscribe</li>
+                    <li>KIA EW</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Middle Content -->
+      <section>
+        <!-- Start & Stop -->
+        <div>
+          <!-- button -->
+          <div>
+            <button>START</button>
+          </div>
+
+          <!-- Search Bar -->
+          <div>
+            <span></span>
+            <input type="text" />
+            <span></span>
+          </div>
+
+          <!-- Noti Icon -->
           <div>
             <ul>
-              <li>Set Service</li>
-              <li>Set Notification</li>
+              <li>⚙️</li>
+              <li>⚙️</li>
             </ul>
           </div>
         </div>
 
-        <!-- Service List -->
+        <!-- Content -->
         <div>
+          <!-- Nav 클릭에 따라 변경 -->
+          <h3>Total Service</h3>
+
+          <!-- Select Date -->
           <div>
-            <h2>Service List</h2>
+            <!-- view Default -->
+            <div>
+              <span>Today</span>
+              <span>⌄</span>
+            </div>
+            <ul>
+              <li>2023-09-07</li>
+              <li>2023-09-04</li>
+            </ul>
           </div>
+
+          <!-- Total Status -->
+          <section>
+            <!-- success -->
+            <div>
+              <h4>Success</h4>
+              <div>
+                <!-- Count -->
+                <div>
+                  <span>1,214</span>
+                </div>
+                <!-- status list -->
+                <div>
+                  <ul>
+                    <li>1xx : 성공</li>
+                    <li>2xx : 성공</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Error -->
+            <div>
+              <h4>Error</h4>
+              <div>
+                <!-- Count -->
+                <div>
+                  <span>1,214</span>
+                </div>
+                <!-- status list -->
+                <div>
+                  <ul>
+                    <li>1xx : 성공</li>
+                    <li>2xx : 성공</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Service Status -->
+          <section>
+            <div>
+              <!-- title -->
+              <div>
+                <div>
+                  <span>STATUS</span>
+                  <span>↓</span>
+                </div>
+                <div>
+                  <span>SERVICE NAME</span>
+                  <span>↓</span>
+                </div>
+                <div>
+                  <span>END POINT</span>
+                </div>
+                <div>
+                  <span>RESPONSE TIME</span>
+                </div>
+              </div>
+
+              <!-- row1 -->
+              <div>
+                <div>
+                  <span>OK</span>
+                </div>
+                <div>
+                  <span>Subscribe</span>
+                </div>
+                <div>
+                  <span>https://www.bluewalnut.co.kr/api/v1/helthcheck</span>
+                </div>
+                <div>
+                  <span>00:00:00 00.02.00</span>
+                </div>
+              </div>
+
+              <!-- row2 -->
+              <div>
+                <div>
+                  <span>OK</span>
+                </div>
+                <div>
+                  <span>Subscribe</span>
+                </div>
+                <div>
+                  <span>https://www.bluewalnut.co.kr/api/v1/helthcheck</span>
+                </div>
+                <div>
+                  <span>00:00:00 00.02.00</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Right Notification -->
+      <section>
+        <!-- Notifications -->
+        <div>
+          <h2>Notifications</h2>
           <div>
             <ul>
               <li>
-                <span>TOTAL SERVICE</span>
-              </li>
-              <li>
-                <span>Service</span>
-                <ul>
-                  <li>PINPAY</li>
-                  <li>Preorder</li>
-                  <li>Subscribe</li>
-                  <li>KIA EW</li>
-                </ul>
+                <div>😀</div>
+                <div>
+                  <p>PINPAY 307 ERROR!!!</p>
+                  <p>Current</p>
+                </div>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
 
-    <!-- Middle Content -->
-    <section>
-      <!-- Start & Stop -->
-      <div>
-        <!-- button -->
+        <!-- Request Count -->
         <div>
-          <button>START</button>
-        </div>
-
-        <!-- Search Bar -->
-        <div>
-          <span></span>
-          <input type="text" />
-          <span></span>
-        </div>
-
-        <!-- Noti Icon -->
-        <div>
-          <ul>
-            <li>⚙️</li>
-            <li>⚙️</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Content -->
-      <div>
-        <!-- Nav 클릭에 따라 변경 -->
-        <h3>Total Service</h3>
-
-        <!-- Select Date -->
-        <div>
-          <!-- view Default -->
+          <h2>Request Count</h2>
           <div>
-            <span>Today</span>
-            <span>⌄</span>
+            <ul>
+              <li>
+                <div>
+                  <span>PINPAY</span>
+                  <span>----------------</span>
+                  <span>56</span>
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>2023-09-07</li>
-            <li>2023-09-04</li>
-          </ul>
         </div>
-
-        <!-- Total Status -->
-        <section>
-          <!-- success -->
-          <div>
-            <h4>Success</h4>
-            <div>
-              <!-- Count -->
-              <div>
-                <span>1,214</span>
-              </div>
-              <!-- status list -->
-              <div>
-                <ul>
-                  <li>1xx : 성공</li>
-                  <li>2xx : 성공</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Error -->
-          <div>
-            <h4>Error</h4>
-            <div>
-              <!-- Count -->
-              <div>
-                <span>1,214</span>
-              </div>
-              <!-- status list -->
-              <div>
-                <ul>
-                  <li>1xx : 성공</li>
-                  <li>2xx : 성공</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Service Status -->
-        <section>
-          <div>
-            <!-- title -->
-            <div>
-              <div>
-                <span>STATUS</span>
-                <span>↓</span>
-              </div>
-              <div>
-                <span>SERVICE NAME</span>
-                <span>↓</span>
-              </div>
-              <div>
-                <span>END POINT</span>
-              </div>
-              <div>
-                <span>RESPONSE TIME</span>
-              </div>
-            </div>
-
-            <!-- row1 -->
-            <div>
-              <div>
-                <span>OK</span>
-              </div>
-              <div>
-                <span>Subscribe</span>
-              </div>
-              <div>
-                <span>https://www.bluewalnut.co.kr/api/v1/helthcheck</span>
-              </div>
-              <div>
-                <span>00:00:00 00.02.00</span>
-              </div>
-            </div>
-
-            <!-- row2 -->
-            <div>
-              <div>
-                <span>OK</span>
-              </div>
-              <div>
-                <span>Subscribe</span>
-              </div>
-              <div>
-                <span>https://www.bluewalnut.co.kr/api/v1/helthcheck</span>
-              </div>
-              <div>
-                <span>00:00:00 00.02.00</span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <!-- Right Notification -->
-    <section>
-      <!-- Notifications -->
-      <div>
-        <h2>Notifications</h2>
-        <div>
-          <ul>
-            <li>
-              <div>😀</div>
-              <div>
-                <p>PINPAY 307 ERROR!!!</p>
-                <p>Current</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Request Count -->
-      <div>
-        <h2>Request Count</h2>
-        <div>
-          <ul>
-            <li>
-              <div>
-                <span>PINPAY</span>
-                <span>----------------</span>
-                <span>56</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
