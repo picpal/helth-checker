@@ -63,6 +63,8 @@
   src: local('Pretendard Thin'), url('../assets/fonts/Pretendard-Thin.woff2') format('woff2'), url('../assets/fonts/Pretendard-Thin.woff') format('woff');
 }
 
+
+
 body {
   font-family: "Pretendard", serif
 }
