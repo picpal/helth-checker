@@ -1,6 +1,8 @@
+import React from 'react'
+
 const LeftMenu = () => {
   return (
-    <div class="p-10">
+    <div className="basis-1/6">
       LeftMenu
     </div>
   )

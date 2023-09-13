@@ -1,15 +1,18 @@
+import React from 'react'
 import LeftMenu from "../../components/LeftMenu/LeftMenu"; 
 import MiddleContent from "../../components/MiddleContent/MiddleContent";
 import RightNotification from "../../components/RightNotification/RightNotification";
+import FlexBox from '../../components/Containers/FlexBox';
 
-export const DashBoard = (prop) => {
+const DashBoard = (prop) => {
   return (
-    <div>
+    <FlexBox>
       <LeftMenu />
       <MiddleContent />
       <RightNotification />
-    </div>
+    </FlexBox>
   );
 };
 
 
+export default DashBoard;
