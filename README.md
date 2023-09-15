@@ -3,5 +3,5 @@
 >
 
 ```bash
-npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/tailwind.css -w
+npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/common.css -w
 ```

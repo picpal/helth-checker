@@ -3,7 +3,7 @@ import React from 'react';
 const FlexBox = (props) => {
   return (
     <div>
-      <div className="flex">{props.children}</div>
+      <div className="flex h-screen">{props.children}</div>
     </div>
   )
 };

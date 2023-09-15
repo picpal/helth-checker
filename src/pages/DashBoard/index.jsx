@@ -3,14 +3,17 @@ import LeftMenu from "../../components/LeftMenu/LeftMenu";
 import MiddleContent from "../../components/MiddleContent/MiddleContent";
 import RightNotification from "../../components/RightNotification/RightNotification";
 import FlexBox from '../../components/Containers/FlexBox';
+import Containers from '../../components/Containers/Container';
 
 const DashBoard = (prop) => {
   return (
-    <FlexBox>
-      <LeftMenu />
-      <MiddleContent />
-      <RightNotification />
-    </FlexBox>
+    <Containers>
+      <FlexBox>
+        <LeftMenu />
+        <MiddleContent />
+        <RightNotification />
+      </FlexBox>
+    </Containers>
   );
 };
 
