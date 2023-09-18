@@ -1,13 +1,14 @@
 import React from 'react'
-import Background from '../Containers/Background';
 import Logo from './Logo';
+import Settings from './Settings';
+import ServiceList from './ServiceList/ServiceList';
 
 const LeftMenu = () => {
   return (
-    <div className="basis-1/6 p-5">
-      <Background color="blue">
-        <Logo />
-      </Background>
+    <div className="basis-1/6 p-5 border-r border-gray-300 min-w-[260px]">
+      <Logo />
+      <Settings />
+      <ServiceList />
     </div>
   )
 };
