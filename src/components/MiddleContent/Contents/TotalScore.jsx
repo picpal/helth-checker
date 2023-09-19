@@ -1,5 +1,5 @@
 import React from 'react';
-import ScoreCard from '../../UI/ScoreCard';
+import ScoreCard from '../../UI/Dashboard/ScoreCard';
 
 const TotalScore = (props) => {
   return (

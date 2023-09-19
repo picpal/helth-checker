@@ -1,32 +1,46 @@
 import React from 'react';
+import StatusTableTr from '../../UI/Dashboard/StatusTableTr';
+import TdEndPoint from '../../UI/Dashboard/TdEndPoint';
+import TdResponseTime from '../../UI/Dashboard/TdResponseTime';
+import StatusTableTitle from '../../UI/Dashboard/StatusTableTItle';
+import TdStatus from '../../UI/Dashboard/TdStatus';
+import TdServiceName from '../../UI/Dashboard/TdServiceName';
 
 const StatusTable = (props) => {
+
+  const fakeData = [
+    {
+      status : "OK",
+      serviceName : "PINPAY",
+      url : "https://www.bluewalnut.co.kr/api/v1/helthcheck",
+      time : "00:00:00 00.02.00"
+    } ,
+    {
+      status : "ERROR",
+      serviceName : "PINPAY",
+      url : "https://www.bluewalnut.co.kr/api/v1/helthcheck",
+      time : "00:00:00 00.02.11"
+    } ,
+  ]
+
   return (
     <div className='mt-6 border rounded-xl p-6'>
-      <table>
+      <table className='w-full'>
         <thead>
-         <tr>
-            <td>STATUS</td>
-            <td>SERVICE NAME</td>
-            <td>END POINT</td>
-            <td>RESPONSE TIME</td>
-         </tr>
+         <StatusTableTitle />
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <span>OK</span>
-            </td>
-            <td>
-              <span>PINPAY</span>
-            </td>
-            <td>
-              <span>https://www.bluewalnut.co.kr/api/v1/helthcheck</span>
-            </td>
-            <td>
-              <span>00:00:00 00.02.00</span>
-            </td>
-          </tr>
+          {
+            fakeData.map((data,idx)=>(
+              <StatusTableTr key={idx}>
+                <TdStatus status={data.status}/>
+                <TdServiceName serviceName={data.serviceName}/>
+                <TdEndPoint url={data.url}/>
+                <TdResponseTime time={data.time}/>
+              </StatusTableTr>
+            ))
+          }
+          
         </tbody>
       </table>
     </div>
