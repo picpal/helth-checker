@@ -1,12 +1,12 @@
 import React from 'react';
 import MainFrame from '../../components/Containers/MainFrame';
 
-const Settings = (props) => {
+const Favorites = (props) => {
   return (
     <MainFrame>
-      settings
+      <div>Favorites</div>
     </MainFrame>
   )
 };
 
-export default Settings;
+export default Favorites;

@@ -3,19 +3,17 @@ import MenuHeading2 from '../UI/Title/MenuTitle';
 import MenuList from '../UI/List/MenuList';
 import MenuLink from '../UI/Link/MenuLink';
 
-const Settings = (props) => {
+
+const Favorites = (props) => {
   return (
     <div className='pt-5 pb-5 '>
       <div>
-        <MenuHeading2 text="Settings"/>
+        <MenuHeading2 text="Favorites"/>
       </div>
       <div>
         <ul>
           <MenuList>      
-            <MenuLink linkName="Set Service" url=""/>      
-          </MenuList>
-          <MenuList>
-            <MenuLink linkName="Set Notification"  url=""/>
+            <MenuLink linkName="Set Service" url="1234"/>
           </MenuList>
         </ul>
       </div>
@@ -23,4 +21,4 @@ const Settings = (props) => {
   )
 };
 
-export default Settings;
+export default Favorites;
