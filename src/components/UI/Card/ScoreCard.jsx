@@ -1,10 +1,12 @@
 import React from 'react';
+import ScoreCardBg from './ScoreCardBg';
+
 
 const ScoreCard = ({params}) => {
   const {bgColor,status, count, percent} = params;
 
   return (
-    <div className={`basis-full p-6 rounded-2xl flex bg-blue-100 justify-between bg-${bgColor}-100`}>
+    <ScoreCardBg color={bgColor}>
       <div>
         <div className='p-2 font-bold'>{status}</div>
         <div className='p-2 text-3xl'>{count}</div>
@@ -12,7 +14,7 @@ const ScoreCard = ({params}) => {
       <div>
         <div className='p-2 text-lg mt-12'>+{percent}</div>
       </div>
-    </div>
+    </ScoreCardBg>
   )
 };
 

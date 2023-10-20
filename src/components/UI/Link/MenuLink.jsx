@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import iconDot from '../../../assets/images/dot.png'
 
-const MenuLink = ({linkName="default" , url}) => {
+const MenuLink = ({linkName="default" , url , icon}) => {
+  const listHeadIcon = icon ? icon : iconDot;
+
   return (
-    <Link className='flex items-center hover:opacity-70'>
-      <i className="fa-solid fa-genderless"></i>
+    <Link to={url} className='flex items-center hover:opacity-70'>
+      <img src={listHeadIcon} />
       <span className='ml-2'>{linkName}</span>
     </Link>
   )

@@ -12,7 +12,7 @@ const Breadcrumb = (props) => {
         <li>Settings</li>
         <li>&gt;</li>
         <li className='text-sky-600'>
-          <Link className='font-bold'>Set Service</Link>
+          <Link >Set Service</Link>
         </li>
       </ul>
     </div>
